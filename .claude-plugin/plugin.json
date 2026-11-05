@@ -1,0 +1,7 @@
+{
+  "name": "glimpin",
+  "displayName": "Glimpin",
+  "version": "0.1.0",
+  "description": "See what happened on your construction sites through your Ring cameras. Claude reads Glimpin's photos and activity, looks at the photos itself, and tells you what it can and can't see.",
+  "author": { "name": "Glimpin" }
+}

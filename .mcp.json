@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "glimpin": {
+      "type": "http",
+      "url": "https://glimpin.com/mcp"
+    }
+  }
+}

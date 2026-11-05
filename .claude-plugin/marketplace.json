@@ -1,0 +1,12 @@
+{
+  "name": "glimpin",
+  "description": "Glimpin's plugins for Claude",
+  "owner": { "name": "Glimpin" },
+  "plugins": [
+    {
+      "name": "glimpin",
+      "source": "./",
+      "description": "See what happened on your construction sites through your Ring cameras."
+    }
+  ]
+}
