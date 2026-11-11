@@ -47,15 +47,15 @@ drywall, finishes), and the work the papers say was done this week.
 
 ## 3. Check on the cameras
 
-- get_cameras_status for the week.
-- get_site_state for the last day of the week, with compare_to set to the day before the week
-started. It gives each camera's reference photo on both days, taken from the same spot: your
-before and after photos. Judge the stage yourself from them; Glimpin's stage is a hint.
-- Find this week's work: get_site_work, get_machine_use and get_vehicle_visits (materials
-delivered) are leads, and get_activity covers the rest.
+- get_camera_status for the week.
+- get_full_size_photos with each camera_id at a time near the end of the last day of the week,
+and at the same time on the day before the week started. Each pair comes from the same camera,
+so from the same spot: your before and after photos. Judge the stage yourself from them.
+- Find this week's work: get_day_summary for each day (vehicles and machines on site,
+materials delivered) is a lead, and browse_events covers the rest.
 - For each stage decide: done, in progress, not started, or not visible on the cameras (most
 inside work). For each piece of work this week: seen or not seen.
-- For each finding, note the frame_id of the photo that proves it.
+- For each finding, note the photo_id of the photo that proves it.
 
 ## 4. Decide what goes in
 

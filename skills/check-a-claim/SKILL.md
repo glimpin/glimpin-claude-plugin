@@ -35,15 +35,16 @@ Context helps you know where and when to look. It never replaces the cameras.
 
 ## 3. Check each item on the cameras
 
-- get_cameras_status for the whole period, then go week by week for a longer claim.
+- get_camera_status for the whole period, then go week by week for a longer claim.
 - Find the evidence for each item:
-  - people and crew: get_people_on_site (when they arrived and left, how many);
-  - vehicles and deliveries: get_vehicle_visits (arrival, departure, what was unloaded);
-  - work done: get_site_work and get_machine_use, and get_site_state with compare_to to see
-  the site before and after the claimed work;
-  - anything else: get_activity around the claimed time.
+  - people and crew: get_day_summary (crew first and last seen, most people at once);
+  - vehicles and deliveries: get_day_summary (when vehicles were on site), then browse_events
+  with type vehicle around that time (arrival, departure, what was unloaded);
+  - work done: machines from get_day_summary, and get_full_size_photos with a camera_id and a
+  time before and after the claimed work, to compare;
+  - anything else: browse_events around the claimed time.
 - Decide each item: seen, not seen, or can't tell.
-- For each finding, note the frame_id of the photo that proves it.
+- For each finding, note the photo_id of the photo that proves it.
 
 ## 4. Reach a verdict
 

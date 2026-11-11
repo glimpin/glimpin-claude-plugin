@@ -42,20 +42,19 @@ each planned item with its expected time, such as "concrete delivery, around 10:
 
 ## 3. Check the day on the cameras
 
-- get_cameras_status, then get_activity for the reviewed day, all cameras, every row.
+- get_camera_status, then get_day_summary for the reviewed day.
 - For each item on your checklist, find the events around its expected time and look at them.
 Decide: happened, didn't happen, or can't tell from the cameras. Give the camera and time.
 - Then what nobody planned: unexpected vehicles, visitors or work, people on site early or late.
-- get_vehicle_visits, get_site_work, get_people_on_site and get_machine_use lead you to the
-right events (deliveries, crew hours, machines working).
-- For each finding, note the frame_id of the photo that proves it. You will show it in the
+- get_day_summary leads you to the right events (deliveries, crew hours, machines working).
+- For each finding, note the photo_id of the photo that proves it. You will show it in the
 report.
 
 ## 4. Where the site stands, and what to watch
 
-- get_site_state for the reviewed day gives the latest photo from each camera and a
-machine-made construction stage. Judge the stage yourself from the photos. Pass compare_to
-(an earlier date, such as a week ago) to see progress.
+- get_full_size_photos with each camera_id and a time near the end of the reviewed day gives
+that camera's last site photo. Judge the construction stage yourself from the photos. Ask for
+the same cameras at an earlier date (such as a week ago) to see progress.
 - Look through the latest photos and the day's events for anything a good supervisor would
 flag. For example:
   - materials or equipment left uncovered when rain, wind or frost is forecast;
